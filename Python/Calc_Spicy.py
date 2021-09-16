@@ -3,7 +3,7 @@ repeat=0
 a = int(input("Enter your first number:"))
 b = int(input("Enter your second number"))
 def doMath(a,b,c):
-    numbA = a
+    numbA = a #variables 
     numbB = b
     productA = a
     productB = b
@@ -18,11 +18,13 @@ def doMath(a,b,c):
     if c == 5:
         return str(a%b)
     if c == 6:
-        while numbA != 1:
+        numbA = numbA - 1 #sets numbA into one less than A for the biginning, only once.
+        while numbA != 1: #makes it not go infinately/go negative
             productA=productA*numbA
             numbA = numbA - 1
         return(str(productA))
     if c == 7:
+        numbB = numbB - 1
         while numbB != 1:
             productB=productB*numbB
             numbB = numbB - 1
