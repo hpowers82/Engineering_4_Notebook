@@ -10,18 +10,19 @@ print ("How many dice?")
 d=input("")
 print ("How many sides?")
 s=input("")
+print("rolling %s dice with %s side(s)!" % (d,s))
 stop=0
+dicenumb=0
 while stop !="x":
-
-   # print("Press enter to roll, or x to exit!")
-   # n=input("")
     for x in range (0,int(d)):
-        print("Your number is...%s!" % randint(1,int(s)))
-    print ("Press enter to roll, c then enter to change the ammount of dice, or x then enter to exit!")
+        dicenumb += 1
+        print("Dice # %s is...%s!" % (dicenumb,randint(1,int(s))))
+    dicenumb=0
+    print("Press enter to roll, c then enter to change the ammount of dice, or x then enter to exit!")
     stop=input("")
     if stop == "c":
         print ("How many dice?")
         d=input("")
         print ("How many sides?")
         s=input("")
-
+        print("rolling %s dice with %s side(s)!" % (d,s))
