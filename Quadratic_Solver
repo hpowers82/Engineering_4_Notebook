@@ -1,5 +1,5 @@
 from math import sqrt
-
+x=""
 def doMath(a,b,c):
     disc = (b**2) - (4*a*c)
     if disc > 0:
@@ -8,11 +8,13 @@ def doMath(a,b,c):
         roots = [root1,root2]
     elif disc == 0:
         root1 = (-b + sqrt(b**2-4*a*c))/(2*a)
-        rootz = root1
+        roots = root1
     elif disc < 0:
-        rootz= ""
+        roots= ""
     return roots
-x=input("Press enter to continue")
+def doVert (a,b,c,h,k)
+    h = (-b)/(2a)
+    k= h**2+b*h+c
 while x == "":
     print("Quadratic Solver")
     print("Enter the coefficients for ax^2 + bx + c = 0")
@@ -25,6 +27,13 @@ while x == "":
     
     print("Enter coefficient c")
     c=int(input(""))
-
-    rootz = doMath(a,b,c)
-    print(rootz)
+    print("You entered %dx^2 +%dx + %d = 0" % (a,b,c))
+    roots = doMath(a,b,c)
+    if len(roots) == 0:
+        print("There are no real roots")
+    else: 
+        print("Root #1: ")
+        print(roots[0])
+        if len(roots) == 2:
+            print (roots[1])
+    print"
