@@ -1,0 +1,30 @@
+from math import sqrt
+
+def doMath(a,b,c):
+    disc = (b**2) - (4*a*c)
+    if disc > 0:
+        root1=(-b + sqrt(b**2-4*a*c))/(2*a)
+        root2=(-b - sqrt(b**2-4*a*c))/(2*a)
+        roots = [root1,root2]
+    elif disc == 0:
+        root1 = (-b + sqrt(b**2-4*a*c))/(2*a)
+        rootz = root1
+    elif disc < 0:
+        rootz= ""
+    return roots
+x=input("Press enter to continue")
+while x == "":
+    print("Quadratic Solver")
+    print("Enter the coefficients for ax^2 + bx + c = 0")
+    
+    print("Enter coefficient a")
+    a=int(input(""))
+    
+    print("Enter coefficient b")
+    b=int(input(""))
+    
+    print("Enter coefficient c")
+    c=int(input(""))
+
+    rootz = doMath(a,b,c)
+    print(rootz)
