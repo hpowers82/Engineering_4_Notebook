@@ -12,10 +12,7 @@ def doMath(a,b,c):
     elif disc < 0:
         roots= ""
     return roots
-def doVert (a,b,c,h,k)
-    h = (-b)/(2a)
-    k= h**2+b*h+c
-while x == "":
+while x != "x":
     print("Quadratic Solver")
     print("Enter the coefficients for ax^2 + bx + c = 0")
     
@@ -36,4 +33,10 @@ while x == "":
         print(roots[0])
         if len(roots) == 2:
             print (roots[1])
-    print"
+    h=(-b)/(2*a)
+    print(h)
+    k=a*(h**2)+b*h+c
+    print(k)
+    print("Vertex form: %g(x-%g)^2+%g" % (a,h,k))
+    print("Press Enter to run again, or press x then Enter to quit")
+    x=input("")
