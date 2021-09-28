@@ -1,0 +1,33 @@
+word = input ("Player 1, please enter your word.\n")
+def clear:
+    print("\n")*50|
+word = [char for char in word]
+dashes = ("_") * len(word)
+clear
+guessIndex=0
+correctList=""
+def MSP(mistakes):
+    print("---┐")
+    if mistakes > 0:
+        print("   O ")
+    if mistakes == 2:
+        print("   |")
+    if mistakes == 3:
+        print("  \|")
+    if mistakes > 3:
+        print("  \|/")
+    if mistakes > 4:
+        print("   |")
+    if mistakes == 6:
+        print("  /")
+    if mistakes > 6:
+        print("  / \ ")
+def guessDisplay(guessIndex,hits,dashes,word):
+    for correctList in word:
+        if hits == word[guessIndex]:
+            dashes = dashes[guessIndex:] + word[b]+ dashes [b+1:]
+
+while blanks != word:
+    if guess in word:
+        hits = (hits+guess)
+    for guess in word
