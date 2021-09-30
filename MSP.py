@@ -1,37 +1,78 @@
-word=input("Player 1, please type your word and press enter.\n")
-dashnumb=0
-mistakes=0
-def split(word):
-    return [char for char in word]
-print("\n" * 50)
 
-def MSP(mistakes):
+
+def MSP(mistakeCount):
     print("---┐")
-    if mistakes > 0:
+    if mistakeCount > 0:
         print("   O ")
-    if mistakes == 2:
+    if mistakeCount == 2:
         print("   |")
-    if mistakes == 3:
+    if mistakeCount == 3:
         print("  \|")
-    if mistakes > 3:
+    if mistakeCount > 3:
         print("  \|/")
-    if mistakes > 4:
+    if mistakeCount > 4:
         print("   |")
-    if mistakes == 6:
+    if mistakeCount == 6:
         print("  /")
-    if mistakes > 6:
+    if mistakeCount > 6:
         print("  / \ ")
-set
-MSP(mistakes)
-print("\n\n\n")
-print (dashes)
-def asker(split,word,dashes):
-    guess=input("Player 2, please enter your guess.\n")
-    if guess in split(word):
-        print("wow you got it wowowcool")
-        ll=word.index(guess)
-        dashes[ll]=guess 
-        print(dashes)
-    elif guess not in splint(word):
-        print("booocringe")
-asker(split,word,dashes)
+counter = 0
+mistakeCount = 0
+hits=""
+misses = ""
+wordTrue = input ("Player 1, please enter your word.\n")
+
+word = [char for char in wordTrue]
+print(word)
+dashes = ("_") * len(word)
+
+print("\n"* 50)
+guessIndex=0
+correctList=""
+counter = 0
+x=
+hitCount = 0
+prettyDash =" ".join(dashes)
+while True:
+    MSP(mistakeCount)
+    print("\n")
+    
+    print("prettyDash\n")
+    
+    print("mistakes left: " + str(mistakeCount) + "\n")
+    
+    if misses != "":    
+        print("mistakes made: " + ", ".join(misses))
+    guess = input("Player 2, please enter a letter to guess. \n")
+    if len(guess) > 1:
+        print("please only guess one charecter.")
+        continue
+    if guess in hits: 
+        print("You have already guessed that letter. please guess again.")
+        continue
+    if guess in misses: 
+        print("You have already guessed that letter. please guess again.")
+        continue
+    if guess in word:
+        hits = hits + guess
+        hitCount = hitCount + 1
+    else:
+        print("Nope, try again!")
+        misses = misses + guess
+        mistakeCount += 1
+        continue
+    while counter != len(word):
+        if word[counter] == guess:
+          dashes = dashes[:counter] + word[counter]+ dashes[counter+1:]
+        counter += 1
+    counter = 0
+    prettyDash = " ".join(dashes)
+    if wordTrue == dashes:
+        print("Yes! the answer is "+wordTrue)
+        print("found with" +mistakeCount +"missed guesses and "+hitCount+ "correct guesses.")
+        break
+    if mistakeCount > 7:
+        print("You have run out of guesses!")
+        print("You used" + mistakeCount +"missed guesses and "+hitCount +"correct guesses.")
+        print("The word was" + wordTrue)
+        break
