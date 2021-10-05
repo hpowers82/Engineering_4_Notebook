@@ -1,12 +1,12 @@
 # Engineering_4_Notebook
-This repository will actually serve as a aid to help you get started with your own template.  You should copy the raw form of this readme into your own, and use this template to write your own.
-
-I didn't ask you to document hello_world.py or dice_roller.py. I'll start off with an example for dice_roller.py, and then you will reflect on calculator.py.
 
 ## Table of Contents
 * [Basics](#Basics)
 * [Python_Dice_Roller](#PythonDiceRoller)
 * [Python_Calculator](#Python_Calculator)
+* [Quadratic_CalcStrings_and_Loops](#Quadratic_Calculator)
+* [Strings_and_Loops](#Strings_and_Loops)
+* [MSP](#MSP)
 ---
 
 ## Basics
@@ -65,7 +65,6 @@ The goal of this assignment was to create a programn that can automatically calc
 
 ![Capture2](https://user-images.githubusercontent.com/60944294/135727860-4486bbd8-1208-4c09-8f83-520a1b8da275.PNG)
 
-
 ### Wiring
 
 N/A
@@ -73,7 +72,7 @@ N/A
 ### Reflection
 This assignment was very helpful in showing me how to use and define functions. It also showed me how to create better print commands.
 
-## Quadratic Calculator
+## Quadratic_Calculator
 
 ### Assignment Description
 
@@ -91,7 +90,7 @@ N/A
 
 This assignment tested my knowledge of quadratics, it was actaully a pretty good refresher for my math class lol. The elif command is a very useful thing i learned while doing this.
 
-## Strings and Loops
+## Strings_and_Loops
 
 ### Assignment Description
 
