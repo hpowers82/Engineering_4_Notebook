@@ -90,3 +90,39 @@ N/A
 ### Reflection
 
 This assignment tested my knowledge of quadratics, it was actaully a pretty good refresher for my math class lol. The elif command is a very useful thing i learned while doing this.
+
+## Strings and Loops
+
+### Assignment Description
+
+The goal of the strings and loops assignments was to teach me how to use for loops and edit strings and lists.
+
+## Evidence
+
+![Capture4](https://user-images.githubusercontent.com/60944294/136056379-0f0da36c-82a7-4f6f-be8e-59f62506f6e6.PNG)
+
+## Wiring
+
+N/A
+
+### Reflection
+
+The strings and loops assignment was very usefull, especially concidering the MSP assignment. 
+
+## MSP
+
+## Assignment Description
+
+The goal of the MSP assignment was to create a full game of hangman within python. every time you made a mistake, a part should be added to the hangman. Every time you correctly guess a letter, it should add that letter to the correct spots in an array with letters you have not guessed yet as blanks.
+
+## Evidence
+
+![Screenshot 2021-09-30 10 14 58 PM](https://user-images.githubusercontent.com/60944294/136057854-354e55ec-f4b7-47d2-b957-d6c493c74448.png)
+
+## Wiring
+
+N/A
+
+### Reflection
+
+The MSP assignment was incredibly difficult. I actually completely started over because my code had become so conveluted and unable to be understood. One thing that helped a lot was Wills code for changing the letters in the blanks array: you can find that [here](https://github.com/willhk10/Engineering_4_Notebook/blob/main/Python/PerfectHangman.py#L72)
