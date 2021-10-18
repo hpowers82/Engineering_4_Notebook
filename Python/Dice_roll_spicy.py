@@ -6,7 +6,7 @@ dicenumb=0
 print ("Automatic Dice Roller")
 
 while stop !="x":
-    if stop == "c":
+    if stop == "c": #this, combined with the initial definition of stop as c, makes it so the first time you run the code you define the variables, and it is optional every consecutive time.
         print ("Type how many dice you want to roll, then press enter.")
         d=input("")
         print ("Type how many sides you want each dice to have, then press enter.")
