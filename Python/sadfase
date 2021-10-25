@@ -1,40 +1,39 @@
 #def solution(src, dest):
 #Your code here
-counter = 1
-dest = 0
-pos=41
+counter = 0
+dest = 32
+pos=16
 yPos = 0
+yDest=0
+xPos=0
 while counter != 9:
-    if counter*8 <= pos:
+    if pos <= 8:
+        yPos = 1
+    if pos >= 8*counter:
         yPos += 1
     else:
         break
     counter += 1
+    
 counter = 0
 
-print(yPos)
-if yPos == 1:
-    xPos=pos
-else:
-    xPos=pos-yPos*8
-xPos=pos-yPos*8
-print(xPos)
-
-yDest = 0
+xPos = pos-(yPos-1)*8
 
 while counter != 9:
+    if dest < 8:
+        yDest = 1
     if counter * 8 <= dest:
         yDest += 1
     else:
         break
     counter += 1
-    
-print(yDest)
-if yDest = 1:
-    xDest=dest
-    else:
-        xDest=dest-yDest*8
-    
-xDest=dest-yDest*8
 
-print(xDest)
+counter = 0
+
+if yDest == 1:
+    xDest=1
+else:
+    xDest=dest-(yDest-2)*8
+    
+print("destination: x value:"+str(xDest)+". y value: "+str(yDest))
+print("position: x value:" + str(xPos) + ". y value: " + str(yPos))
