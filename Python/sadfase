@@ -1,0 +1,40 @@
+#def solution(src, dest):
+#Your code here
+counter = 1
+dest = 0
+pos=41
+yPos = 0
+while counter != 9:
+    if counter*8 <= pos:
+        yPos += 1
+    else:
+        break
+    counter += 1
+counter = 0
+
+print(yPos)
+if yPos == 1:
+    xPos=pos
+else:
+    xPos=pos-yPos*8
+xPos=pos-yPos*8
+print(xPos)
+
+yDest = 0
+
+while counter != 9:
+    if counter * 8 <= dest:
+        yDest += 1
+    else:
+        break
+    counter += 1
+    
+print(yDest)
+if yDest = 1:
+    xDest=dest
+    else:
+        xDest=dest-yDest*8
+    
+xDest=dest-yDest*8
+
+print(xDest)
