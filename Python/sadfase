@@ -1,31 +1,34 @@
 #def solution(src, dest):
 #Your code here
 counter = 0
-dest = 8
-pos=17
+
 yPos = 0
 yDest=0
 xPos=0
+coordList = [(y, x) for y in range(8) for x in range(8)]
+print(coordList)
+def coord(z):
+    counter = 0
+    zY=0
+    zX=0
+    while True:
+        if counter * 8 <= z:
+            counter += 1
+        else:
+            zY=counter
+            break
+    zX = z-(zY*8)
+    return (zX,zY)
+print(posCoord(8))
+#while True:
+ #   if counter * 8 >= dest:
+ #       yDest = counter
+#        counter = 0
+#        break
+ #   else:
+#        counter += 1
 
-while True:
-    if counter * 8 >= pos:
-        yPos = counter
-        counter = 0
-        break
-    else:
-        counter += 1
-
-xPos = pos-(yPos-1)*8
-
-while True:
-    if counter * 8 >= dest:
-        yDest = counter
-        counter = 0
-        break
-    else:
-        counter += 1
-
-xDest = dest-(yDest-1)*8
+#xDest = dest-(yDest-1)*8
 oneMove = {
     1 : 2,
     2 : 1
@@ -38,10 +41,8 @@ twoMove = {
     4:0,
     4:2,
 }
-dct = {v: k for k, v in twoMove.items()}
-print(dct)
 
-while xDest != xPos:
-    xDif = abs(xDest - xPos)
-    yDif = abs(xDest-xPos)
-    xDest = xPos
+#while xDest != xPos:
+  #  xDif = abs(xDest - xPos)
+ #   yDif = abs(xDest-xPos)
+  #  xDest = xPos
