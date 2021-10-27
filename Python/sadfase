@@ -1,39 +1,47 @@
 #def solution(src, dest):
 #Your code here
 counter = 0
-dest = 32
-pos=16
+dest = 8
+pos=17
 yPos = 0
 yDest=0
 xPos=0
-while counter != 9:
-    if pos <= 8:
-        yPos = 1
-    if pos >= 8*counter:
-        yPos += 1
-    else:
+
+while True:
+    if counter * 8 >= pos:
+        yPos = counter
+        counter = 0
         break
-    counter += 1
-    
-counter = 0
+    else:
+        counter += 1
 
 xPos = pos-(yPos-1)*8
 
-while counter != 9:
-    if dest < 8:
-        yDest = 1
-    if counter * 8 <= dest:
-        yDest += 1
-    else:
+while True:
+    if counter * 8 >= dest:
+        yDest = counter
+        counter = 0
         break
-    counter += 1
+    else:
+        counter += 1
 
-counter = 0
+xDest = dest-(yDest-1)*8
+oneMove = {
+    1 : 2,
+    2 : 1
+}
+twoMove = {
+    2:0,
+    4:0,
+    1:1,
+    3:3,
+    4:0,
+    4:2,
+}
+dct = {v: k for k, v in twoMove.items()}
+print(dct)
 
-if yDest == 1:
-    xDest=1
-else:
-    xDest=dest-(yDest-2)*8
-    
-print("destination: x value:"+str(xDest)+". y value: "+str(yDest))
-print("position: x value:" + str(xPos) + ". y value: " + str(yPos))
+while xDest != xPos:
+    xDif = abs(xDest - xPos)
+    yDif = abs(xDest-xPos)
+    xDest = xPos
