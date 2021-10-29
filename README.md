@@ -70,7 +70,8 @@ The goal of this assignment was to create a programn that can automatically calc
 N/A
 
 ### Reflection
-This assignment was very helpful in showing me how to use and define functions. It also showed me how to create better print commands.
+
+This assignment taught me the uses and syntax for functions. They are very usefull when you want to run a similar command many times within your code, and don't want to type it out every time. I had some trouble figuring out how to get variables in and out of the function, but discovered that inside the function is kind of its own thing, and you must do specific things to get things in and out.
 
 ## Quadratic_Calculator
 
