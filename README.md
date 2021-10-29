@@ -125,3 +125,21 @@ N/A
 ### Reflection
 
 The MSP assignment was incredibly difficult. I actually completely started over because my code had become so conveluted and unable to be understood. One thing that helped a lot was Wills code for changing the letters in the blanks array: you can find that [here](https://github.com/willhk10/Engineering_4_Notebook/blob/main/Python/PerfectHangman.py#L72)
+
+## CAD
+
+## Assignment Description
+
+The goal of the CAD assignment is to create a skateboard while teaching me some elements of Onshape CAD design. This is done by checking whether the weight of the object is correct.
+
+## Evidence
+
+![image](https://user-images.githubusercontent.com/60944294/139372868-5448ca82-9bc9-4995-9bc1-83f0c2dfe453.png)
+
+## Wiring
+
+N/A
+
+### Reflection
+
+This assignment was pretty difficult. a couple of times, i found that my weight was not quite correct, and I had to go back and fix it. most of the time, the issues were with making sure that items are grouped well, which seemed to be a major element of the challenge. I am very happy that I know the basics of Onshape now.
