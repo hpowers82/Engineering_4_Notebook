@@ -25,7 +25,7 @@ print(get_primes(2, 10000))
 split=[char for char in get_primes(2, 10000)]
 i=5
 def solution(i,split):
-    for 5 in 
-    z= "".join(split[range(i,i+5)])
-    return 
+
+    z= "".join(split[i:i+5])
+    return z
 print(solution(i,split))
