@@ -1,48 +1,31 @@
-#def solution(src, dest):
-#Your code here
-counter = 0
+def get_primes(start, stop):
+    dct = {x: True for x in list(range(start, stop+1))}
+    x = start
 
-yPos = 0
-yDest=0
-xPos=0
-coordList = [(y, x) for y in range(8) for x in range(8)]
-print(coordList)
-def coord(z):
-    counter = 0
-    zY=0
-    zX=0
-    while True:
-        if counter * 8 <= z:
-            counter += 1
-        else:
-            zY=counter
-            break
-    zX = z-(zY*8)
-    return (zX,zY)
-print(posCoord(8))
-#while True:
- #   if counter * 8 >= dest:
- #       yDest = counter
-#        counter = 0
-#        break
- #   else:
-#        counter += 1
+    while x ** 2 <= stop:
+        if dct[x]:
+            y = x ** 2
+            while y <= stop:
+                dct[y] = False
+                y += x
+        x += 1
 
-#xDest = dest-(yDest-1)*8
-oneMove = {
-    1 : 2,
-    2 : 1
-}
-twoMove = {
-    2:0,
-    4:0,
-    1:1,
-    3:3,
-    4:0,
-    4:2,
-}
-
-#while xDest != xPos:
-  #  xDif = abs(xDest - xPos)
- #   yDif = abs(xDest-xPos)
-  #  xDest = xPos
+    lst = []
+    for x, y in dct.items():
+        if y:
+            lst.append(x)
+    z=""
+    for x in lst:
+        z = z + str(x)
+    return(z)
+primeList=("")
+res = get_primes(2, 10000)
+#print(get_primes(2,10000))
+print(get_primes(2, 10000))
+split=[char for char in get_primes(2, 10000)]
+i=5
+def solution(i,split):
+    for 5 in 
+    z= "".join(split[range(i,i+5)])
+    return 
+print(solution(i,split))
