@@ -1,19 +1,12 @@
 import RPi.GPIO as GPIO
 from time import sleep
 GPIO.setmode(GPIO.BCM)
-import board
-GPIO setup(21, GPIO.OUT)
+GPIO.setup(21, GPIO.OUT)
 GPIO.setup(12, GPIO.OUT)
-x=1
-y=0
-var=0
-def flip(var,x,y):
-	var=x
-	x=y
-	y=var
-
-while True:
-	GPIO.output(21, x)
-	GPIO.output(12, x-y)
-	flip(var,x,y)
+def goLed(x,y):
+	GPIO.output(21,x)
+	GPIO.output(12,y)
 	sleep(.25)
+while True:
+	goLed(1,0)
+	goLed(0,1)
