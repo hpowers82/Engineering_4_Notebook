@@ -10,7 +10,7 @@ def goLed(x,y,):
 	GPIO.output(12,y) #does the same with the other pin
 	if y == 1:
 		print("red on!")
-	sleep(.25)
+	sleep(.25)# pauses for .25 seconds
 while True:
-	goLed(1,0)
-	goLed(0,1)
+	goLed(1,0)# sets the led on pin 21 on and the led on pin 12 off
+	goLed(0,1) # does the opposite
