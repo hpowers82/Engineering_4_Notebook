@@ -1,29 +1,32 @@
+import time
+
 import Adafruit_GPIO.SPI as SPI
 import Adafruit_SSD1306
 import Adafruit_LSM303
-import time
+
 from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageFont
+
 lsm303 = Adafruit_LSM303.LSM303()
 x=0
 RST = 24
 disp = Adafruit_SSD1306.SSD1306_128_64(rst=RST, i2c_address=0x3d)
 
-disp.begin()
-disp.clear()
-disp.display()
-
-width=disp.width
+width = disp.width
 height = disp.height
-image = Image.new('1', (width,height))
-draw=ImageDraw.Draw(image)
+image = Image.new('1', (width, height))
 padding = 2
 shape_width = 20
 top = padding
 bottom = height-padding
 
+disp.begin()
+
 font = ImageFont.load_default()
+draw = ImageDraw.Draw(image)
+
+
 while True:
   draw.rectangle((0,0,width,height), outline=0, fill=0)
   accel, mag = lsm303.read()
