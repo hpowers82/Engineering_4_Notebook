@@ -1,27 +1,38 @@
 import Adafruit_GPIO.SPI as SPI
 import Adafruit_SSD1306
 import Adafruit_LSM303
+import time
+from PIL import Image
+from PIL import ImageDraw
+from PIL import ImageFont
 lsm303 = Adafruit_LSM303.LSM303()
+x=0
 RST = 24
-DC = 23
-SPI_PORT = 0
-SPI_DEVICE = 0
-disp = Adafruit_SSD1306.SSD1306_128_63(rst=RST, i2c_adress=0x3d)
+disp = Adafruit_SSD1306.SSD1306_128_64(rst=RST, i2c_address=0x3d)
+
 disp.begin()
 disp.clear()
 disp.display()
-width-disp.width
-height=disp.height
-image.new('1', (width, height))
+
+width=disp.width
+height = disp.height
+image = Image.new('1', (width,height))
+draw=ImageDraw.Draw(image)
 padding = 2
 shape_width = 20
 top = padding
-bottom = height - padding
+bottom = height-padding
+
+font = ImageFont.load_default()
 while True:
+  draw.rectangle((0,0,width,height), outline=0, fill=0)
   accel, mag = lsm303.read()
   accel_x, accel_y, accel_z = accel
-  draw.text((0,0), 'Accel X={0}'.format(accel_x), font=font, fill=225)
-  draw.text((0,0), 'Accel Y={0}'.format(accel_y), font=font, fill=225)
-  draw.text((0,0), 'Accel Z={0}'.format(accel_z), font=font, fill=225)
-  display.clear()
-      
+  mag_x, mag_y, mag_z = mag
+ # draw.text((x,top+20), 'Accel X='+str(accel_x), font=font, fill=225)
+  draw.text((x,top+20), "y: " + (str(round(accel_y / 107, 3))), font=font, fill=225)
+  #draw.text((x,top+20), 'Accel Y='+str(accel_y), font=font, fill=225)
+ # draw.text((x,top+40), 'Accel Z='+str(accel_z), font=font, fill=225)
+  #time.sleep(.5)
+  disp.image(image)
+
