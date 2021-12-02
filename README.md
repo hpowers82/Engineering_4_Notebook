@@ -144,3 +144,21 @@ N/A
 ### Reflection
 
 This assignment was pretty difficult. a couple of times, i found that my weight was not quite correct, and I had to go back and fix it. most of the time, the issues were with making sure that items are grouped well, which seemed to be a major element of the challenge. I am very happy that I know the basics of Onshape now.
+
+## RPi Safe Shutdown Button
+
+## Assignment Description
+
+The goal of the safe shutdown button is to use preexisting code in order to wire a button that shuts down your pi when it is pressed.
+
+## Evidence
+
+![IMG_20211129_120046](https://user-images.githubusercontent.com/60944294/143911229-4511ed28-258f-4877-92cd-b95255ad72af.jpg)
+
+## Wiring
+
+![image](https://user-images.githubusercontent.com/60944294/143913184-83c30f35-f6a4-4583-b0d0-c9391aeb316e.png)
+
+## Reflection
+
+I had a few hiccups while completing this assignment. First, I put the file in the wrong folder in my pi. Then,
