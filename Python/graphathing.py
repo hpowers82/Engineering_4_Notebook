@@ -49,7 +49,7 @@ while True:
     max_x = accel_x
     y=round((accel_x/max_x)*64)
   if time >= 128:
-    draw.rectangle((0,0,l,h), outline=0, fill=0)
+    draw.rectangle((0,0,disp.width,disp.height), outline=0, fill=0)
     while redo <= len(pixelList):
         draw.rectangle((redo, round((int(pixelList[redo])/max_x) * 64) ,1,1), outline=225,fill=225)
         redo += 1
