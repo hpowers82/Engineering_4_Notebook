@@ -34,23 +34,25 @@ while True:
   accel_x, accel_y, accel_z = accel
   mag_x, mag_y, mag_z = mag
   accel_x=abs(accel_x)
+  print(accel_x)
+  redo = 0
   
   pixelList.append(accel_x)
   if len(pixelList) > l:
     pixelList.pop(0)
-
+    
   if accel_x > max_x:
     max_x = accel_x
+    draw.rectangle((0,0,l,h), outline=0, fill=0)
     redo = 0
-    draw.rectangle((0,0,width,height), outline=0, fill=0)
-    
+    y = round((max_x/h) * accel_x)
     while redo <= time:
       draw.rectangle((redo ,round(max_x/h) * int(pixelList[redo]) ,1 ,1 ), outline=225,fill=225)
       redo += 1
-  else:  
-    y = round((max_x/h) * pos_x)
+  elif time >= 128:
+    draw.rectangle((time,y,1), outline=225,fill=225)
+  elif time < 128:
     draw.rectangle((time,y,1,1), outline=1, fill=1)
-  time += 1
-  if time > 128:
-    time = 0
+    time += 1
+    
   disp.image(image)
