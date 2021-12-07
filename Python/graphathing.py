@@ -35,7 +35,7 @@ while True:
   accel_x, accel_y, accel_z = accel
   mag_x, mag_y, mag_z = mag
   
-  pixelList = pixelList + accel_x
+  pixelList = pixelList + str(accel_x)
   if len(pixelList) > l:
     pixelList.pop(0)
 
@@ -45,7 +45,7 @@ while True:
     draw.rectangle((0,0,width,height), outline=0, fill=0)
     
     while redo <= time:
-      draw.pixel((redo),(round(max_x/h) * pixelList[redo]))
+      draw.pixel((redo),(round(max_x/h) * int(pixelList[redo])))
       redo += 1
   else:  
     y = round((max_x/h) * pos_x)
