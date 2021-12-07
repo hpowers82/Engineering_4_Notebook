@@ -51,7 +51,7 @@ while True:
   if time >= 128:
     draw.rectangle((0,0,l,h), outline=0, fill=0)
     while redo <= len(pixelList):
-        draw.rectangle((redo, round(int(pixelList[redo])/max_x) * 64) ,1,1), outline=225,fill=225)
+        draw.rectangle((redo, round((int(pixelList[redo])/max_x) * 64) ,1,1), outline=225,fill=225)
         redo += 1
   else:
     draw.rectangle((time,y,1,1), outline=1, fill=1)
