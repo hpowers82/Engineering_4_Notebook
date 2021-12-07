@@ -27,14 +27,16 @@ disp.begin()
 pixelList = []
 font = ImageFont.load_default()
 draw = ImageDraw.Draw(image)
-if time < l:
-  draw.rectangle((0,0,l,h), outline=0, fill=0)
+draw.rectangle((0,0,l,h), outline=0, fill=0)
 while True:
   accel, mag = lsm303.read()
   accel_x, accel_y, accel_z = accel
   mag_x, mag_y, mag_z = mag
   accel_x=abs(accel_x)
-  draw.rectangle((time + 1, 0, 1, height), outline=0, fill=0)
+  
+  if time < l:
+    draw.rectangle((time + 1, 0, 1, height), outline=0, fill=0)
+    
   pixelList.append(accel_x)
   if len(pixelList) > l:
     pixelList.pop(0)
