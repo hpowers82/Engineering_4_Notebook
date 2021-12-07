@@ -35,7 +35,7 @@ while True:
   accel_x, accel_y, accel_z = accel
   mag_x, mag_y, mag_z = mag
   
-  pixelList = pixelList + str(accel_x)
+  pixelList.append(accel_x)
   if len(pixelList) > l:
     pixelList.pop(0)
 
