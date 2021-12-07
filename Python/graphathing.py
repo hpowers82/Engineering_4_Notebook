@@ -48,11 +48,11 @@ while True:
     draw.rectangle((0,0,width,height), outline=0, fill=0)
     
     while redo <= time:
-      display.drawPixel((redo),(round(max_x/h) * int(pixelList[redo])))
+      disp.drawPixel((redo),(round(max_x/h) * int(pixelList[redo])))
       redo += 1
   else:  
     y = round((max_x/h) * pos_x)
-    display.drawPixel(time,y)
+    disp.drawPixel(time,y)
   time += 1
   if time > 128:
     time = 0
