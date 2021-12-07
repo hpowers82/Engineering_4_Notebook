@@ -30,6 +30,7 @@ font = ImageFont.load_default()
 draw = ImageDraw.Draw(image)
 draw.rectangle((0,0,l,h), outline=0, fill=0)
 while True:
+
   accel, mag = lsm303.read()
   accel_x, accel_y, accel_z = accel
   mag_x, mag_y, mag_z = mag
@@ -37,22 +38,22 @@ while True:
   print(accel_x)
   redo = 0
   y=round((accel_x/max_x)*64)
+  
   pixelList.append(accel_x)
+  
+  
   if len(pixelList) > l:
     pixelList.pop(0)
     
   if accel_x > max_x:
     max_x = accel_x
-    draw.rectangle((0,0,l,h), outline=0, fill=0)
-    redo = 0
     y=round((accel_x/max_x)*64)
-    while redo <= time:
-      draw.rectangle((redo ,round(max_x/h) * int(pixelList[redo]) ,1 ,1 ), outline=225,fill=225)
-      redo += 1
-  elif time >= 128:
-    draw.rectangle((time,y,1,1), outline=225,fill=225)
-    print("time is:" +str(y)+"\nY is: "+str(y))
-  elif time < 128:
+  if time >= 128:
+    draw.rectangle((0,0,l,h), outline=0, fill=0)
+    while redo <= len(pixelList):
+        draw.rectangle((redo, round(int(pixelList[redo])/max_x) * 64) ,1,1), outline=225,fill=225)
+        redo += 1
+  else:
     draw.rectangle((time,y,1,1), outline=1, fill=1)
     print("time is:" +str(y)+"\nY is: "+str(y))
     time += 1
