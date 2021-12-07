@@ -45,7 +45,7 @@ while True:
     draw.rectangle((0,0,width,height), outline=0, fill=0)
     
     while redo <= time:
-      draw.rectangle(redo,(round(max_x/h) * int(pixelList[redo]))), 1,1), outline=1, fill=1)
+      draw.rectangle(redo,(round(max_x/h) * int(pixelList[redo])), 1,1), outline=1, fill=1)
       redo += 1
   else:  
     y = round((max_x/h) * pos_x)
