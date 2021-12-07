@@ -36,7 +36,7 @@ while True:
   accel_x=abs(accel_x)
   print(accel_x)
   redo = 0
-  
+  y=round((accel_x/max_x)*64)
   pixelList.append(accel_x)
   if len(pixelList) > l:
     pixelList.pop(0)
@@ -45,10 +45,10 @@ while True:
     max_x = accel_x
     draw.rectangle((0,0,l,h), outline=0, fill=0)
     redo = 0
+    y=round((accel_x/max_x)*64)
     while redo <= time:
       draw.rectangle((redo ,round(max_x/h) * int(pixelList[redo]) ,1 ,1 ), outline=225,fill=225)
       redo += 1
-  y=round((accel_x/max_x)*64)
   elif time >= 128:
     draw.rectangle((time,y,1,1), outline=225,fill=225)
     print("time is:" +str(y)+"\nY is: "+str(y))
