@@ -47,9 +47,9 @@ while True:
     while redo <= time:
       draw.pixel((redo),(round(max_x/h) * pixelList[redo]))
       redo += 1
-    elif:  
-      y = round((max_x/h) * pos_x)
-      draw.pixel(time, y)
+  else:  
+    y = round((max_x/h) * pos_x)
+    draw.pixel(time, y)
   if time != 128:
     time += 1
   disp.image(image)
