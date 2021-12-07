@@ -20,7 +20,7 @@ top = padding
 bottom = height-padding
 
 pos_x = 0
-max_x = 0
+max_x = 1
 time = 0
 l = 128
 h=64  
