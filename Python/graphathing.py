@@ -51,10 +51,10 @@ while True:
       redo += 1
   elif time >= 128:
     draw.rectangle((time,y,1,1), outline=225,fill=225)
-    print("time is:" +y+"\nY is: "+y)
+    print("time is:" +str(y)+"\nY is: "+str(y))
   elif time < 128:
     draw.rectangle((time,y,1,1), outline=1, fill=1)
-    print("time is:" +y+"\nY is: "+y)
+    print("time is:" +str(y)+"\nY is: "+str(y))
     time += 1
     
   disp.image(image)
