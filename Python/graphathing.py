@@ -35,9 +35,6 @@ while True:
   mag_x, mag_y, mag_z = mag
   accel_x=abs(accel_x)
   
-  if time < l:
-    draw.rectangle((time + 1, 0, 1, height), outline=0, fill=0)
-    
   pixelList.append(accel_x)
   if len(pixelList) > l:
     pixelList.pop(0)
@@ -49,10 +46,11 @@ while True:
     
     while redo <= time:
       disp.drawPixel((redo),(round(max_x/h) * int(pixelList[redo])))
+      draw.rectangle((redo,(round(max_x/h) * int(pixelList[redo]))), 1,1), outline=1, fill=1)
       redo += 1
   else:  
     y = round((max_x/h) * pos_x)
-    disp.drawPixel(time,y)
+    draw.rectangle((time,y,1,1), outline=1, fill=1)
   time += 1
   if time > 128:
     time = 0
