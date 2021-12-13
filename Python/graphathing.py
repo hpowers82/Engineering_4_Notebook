@@ -30,7 +30,7 @@ font = ImageFont.load_default()
 draw = ImageDraw.Draw(image)
 def getY(pixelList,redo):
  # y=round((int(pixelList[redo])/int(max(pixelList))*64)
-  y=32
+  y=round(64*((int(pixelList[redo])/int(max(pixelList))))
   return y
 while True:
   time += 1
