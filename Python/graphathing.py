@@ -39,8 +39,7 @@ while True:
   mag_x, mag_y, mag_z = mag
   accel_x=abs(accel_x)
   print(accel_x)
-  redo = 0
-  print(getY(pixelList,-1)) 
+  redo = 0 
   pixelList.append(accel_x)
   if len(pixelList) > l:
     pixelList.pop(0)
