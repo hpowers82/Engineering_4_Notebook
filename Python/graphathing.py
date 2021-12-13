@@ -28,10 +28,9 @@ disp.begin()
 pixelList = []
 font = ImageFont.load_default()
 draw = ImageDraw.Draw(image)
-y=round(64*((int(pixelList[redo])/int(max(pixelList)))))
 def getY(pixelList,redo):
  # y=round((int(pixelList[redo])/int(max(pixelList))*64)
-  y=round(64*((int(pixelList[redo])/int(max(pixelList))))
+  y=round(64*((int(pixelList[redo])/int(max(pixelList)))))
   return y
 while True:
   time += 1
