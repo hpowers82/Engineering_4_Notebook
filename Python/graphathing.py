@@ -22,8 +22,8 @@ bottom = height-padding
 pos_x = 0
 max_x = 1
 time = 0
-width = 128
-height = 64  
+width = 128 ## first input in print is width
+height = 64  ##  second input in print is height
 disp.begin()
 pixelList = []
 font = ImageFont.load_default()
@@ -49,7 +49,7 @@ while True:
     redo = 128
     for i in len(pixelList):
       getY()
-      draw.rectangle((redo, y ,1,1), outline=225,fill=225)
+      draw.rectangle((redo,y,redo,y), outline=225,fill=225)
       redo -= 1
     redo = 0
     
@@ -58,7 +58,7 @@ while True:
     redo = 0
     for i in 128:
         findY()
-        draw.rectangle((redo,y,1,1), outline=225,fill=225)
+        draw.rectangle((redo,y,redo,y), outline=225,fill=225)
         redo += 1
     
   disp.image(image)
