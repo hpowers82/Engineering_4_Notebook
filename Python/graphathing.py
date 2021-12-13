@@ -45,7 +45,7 @@ while True:
   pixelList.pop(0)
   
   while redo < 128:
-    getY()
+    getY(pixelList,redo)
     draw.rectangle((redo,y,redo,y), outline=225,fill=225)
   redo += 1
 
