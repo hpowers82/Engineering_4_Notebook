@@ -41,7 +41,7 @@ while True:
   print(accel_x)
   redo = 0 
   pixelList.append(accel_x)
-  if len(pixelList) > l:
+  if len(pixelList) > 128:
     pixelList.pop(0)
   max_x = max(pixelList)
           
