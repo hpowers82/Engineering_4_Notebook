@@ -105,7 +105,7 @@ x += shape_width+padding
 # Draw an X.
 draw.line((x, bottom, x+shape_width, top), fill=255)
 draw.line((x, top, x+shape_width, bottom), fill=255)
-draw.rectangle((1, 1 ,1,1), outline=225,fill=225)
+draw.rectangle((50,1,1,1), outline=225,fill=225)
 x += shape_width+padding
 
 # Load default font.
