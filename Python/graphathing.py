@@ -26,7 +26,7 @@ height = 64  ##  second input in print is height
 disp.begin()
 pixelList = []
 for i in range(128):
- pixelListList.append(0)
+ pixelList.append(0)
 font = ImageFont.load_default()
 draw = ImageDraw.Draw(image)
 def getY(pixelList,redo):
