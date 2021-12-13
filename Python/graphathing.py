@@ -29,8 +29,9 @@ pixelList = []
 font = ImageFont.load_default()
 draw = ImageDraw.Draw(image)
 def getY(pixelList,redo):
-  y=round((int(pixelList[redo])/int(max(pixelList))*64)
-  return 13
+ # y=round((int(pixelList[redo])/int(max(pixelList))*64)
+  y=32
+  return y
 while True:
   time += 1
   accel, mag = lsm303.read()
