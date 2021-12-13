@@ -45,15 +45,15 @@ while True:
     pixelList.pop(0)
   max_x = max(pixelList)
           
-  if time <= 128:
+  if time < 128:
     redo = 128
-    for i in len(pixelList):
+    for i in range(len(pixelList)):
       getY()
       draw.rectangle((redo,y,redo,y), outline=225,fill=225)
       redo -= 1
     redo = 0
     
-  if len(pixelList) > 128:
+  if len(pixelList) >= 128:
     draw.rectangle((0,0,disp.width,disp.height), outline=0, fill=0)
     redo = 0
     for i in 128:
