@@ -31,10 +31,6 @@ disp.begin()
 
 font = ImageFont.load_default()
 draw = ImageDraw.Draw(image)
-draw.rectangle((0,0,width,height), outline=0, fill=0)
-disp.image(image)
-disp.display()
-time.sleep(5)
 while True:
   draw.rectangle((0,0,width,height), outline=0, fill=0)
   time.sleep(2)
@@ -48,7 +44,8 @@ while True:
   #print(pixelList)
   #y=round(pixelList[127]/max(pixelList)*64,0)
   #print(y)
-  if oldMax > max(pixelList):
+  
+  if oldMax not in pixelList or oldMax < max(pixelList) and pixelList[0] != 0:
    for x in range(3):
     draw.rectangle((0,0,width,height), outline=0, fill=0)
     draw.text((x,top+20), "resetting."+"."*redo, font=font, fill=225)
@@ -56,7 +53,8 @@ while True:
    disp.image(image)
    time.sleep(2)
    draw.rectangle((0,0,width,height), outline=0, fill=0)
-  elif redo < 128:
+
+  if redo < 128:
     y=round(pixelList[redo]/max(pixelList)*64,0)
     draw.rectangle((redo,y,redo,y), outline=225,fill=225)
     redo += 1
