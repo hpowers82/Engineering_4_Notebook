@@ -31,7 +31,7 @@ disp.begin()
 
 font = ImageFont.load_default()
 draw = ImageDraw.Draw(image)
-draw.text((x,top+20), "epic", font=font, fill=225)
+draw.text((64,32), "epic", font=font, fill=225)
 disp.display
 time.sleep(2)
 while True:
