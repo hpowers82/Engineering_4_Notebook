@@ -77,6 +77,6 @@ while True:
    #     findY()
     #    draw.rectangle((redo,y,redo,y), outline=225,fill=225)
      #   redo += 1
-  oldMax=max(pixelList
+  oldMax=max(pixelList)
   disp.image(image)
   disp.display
