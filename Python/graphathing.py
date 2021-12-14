@@ -34,6 +34,7 @@ draw = ImageDraw.Draw(image)
 
 while True:
   draw.rectangle((0,0,width,height), outline=0, fill=0)
+  time.sleep(2)
   accel, mag = lsm303.read()
   accel_x, accel_y, accel_z = accel
   mag_x, mag_y, mag_z = mag
