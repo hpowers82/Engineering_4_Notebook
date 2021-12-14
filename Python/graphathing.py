@@ -41,11 +41,13 @@ while True:
   #print(accel_x)
   pixelList.append(accel_x)
   pixelList.pop(0)
+  oldMax=max(pixelList)
+
   #print(pixelList)
   #y=round(pixelList[127]/max(pixelList)*64,0)
   #print(y)
   
-  if pixelList[0] != 0: and oldMax not in pixelList or oldMax < max(pixelList)
+  if oldMax < max(pixelList):
    for x in range(3):
     draw.rectangle((0,0,width,height), outline=0, fill=0)
     draw.text((x,top+20), "resetting."+"."*redo, font=font, fill=225)
@@ -61,7 +63,6 @@ while True:
     print(redo)
     print(y)
   redo = 0
-  oldMax=max(pixelList)
   disp.image(image)
   time.sleep(.1)
   disp.display
