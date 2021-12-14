@@ -37,7 +37,7 @@ for i in range(128):
 
 font = ImageFont.load_default()
 draw = ImageDraw.Draw(image)
-draw.rectangle((10,30,10,30), outline=225, fill=225)
+draw.rectangle((10,30,10,50), outline=225, fill=225)
 disp.image(image)
 disp.display
 #draw.text((64,32), "epic", font=font, fill=225)
