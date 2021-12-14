@@ -12,9 +12,17 @@ x=0
 RST = 24
 disp = Adafruit_SSD1306.SSD1306_128_64(rst=RST, i2c_address=0x3d)
 
+disp.begin()
+
+disp.clear()
+disp.display()
+
 width = disp.width
 height = disp.height
 image = Image.new('1', (width, height))
+
+draw = ImageDraw.Draw(image)
+
 padding = 2
 shape_width = 20
 top = padding
@@ -28,6 +36,8 @@ for i in range(128):
  pixelList.append(0)
 
 disp.begin()
+
+
 
 font = ImageFont.load_default()
 draw = ImageDraw.Draw(image)
