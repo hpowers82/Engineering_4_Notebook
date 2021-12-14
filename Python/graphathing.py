@@ -73,3 +73,4 @@ while True:
      #   redo += 1
     
   disp.image(image)
+  disp.display
