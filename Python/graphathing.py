@@ -60,12 +60,13 @@ while True:
 
   while redo < 128:
     y=round(pixelList[redo]/max(pixelList)*64,0)
+    draw.text(redo,y), "shmoove", font=font, fill=225)
+    draw.text((x,top+20), "epic", font=font, fill=225)
     draw.rectangle((redo,y,redo,y), outline=225,fill=225)
     redo += 1
     print(redo)
     print(y)
   redo = 0
-  disp.image(image)
   time.sleep(.1)
   disp.display
 
