@@ -85,4 +85,3 @@ while True:
      #   redo += 1
   oldMax=max(pixelList)
   disp.image(image)
-  disp.display
