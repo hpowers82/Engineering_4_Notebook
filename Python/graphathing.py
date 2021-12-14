@@ -83,6 +83,7 @@ while True:
     print(y)
   redo = 0
   time.sleep(.5)
+  disp.image(image)
   disp.display
 
       
