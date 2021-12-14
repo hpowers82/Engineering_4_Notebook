@@ -41,11 +41,7 @@ for i in range(128):
 font = ImageFont.load_default()
 draw = ImageDraw.Draw(image)
 #draw.text((64,32), "epic", font=font, fill=225)
-draw.rectangle((10,10,50,50), outline=255, fill=255)
-disp.image(image)
-disp.display()
 time.sleep(2)
-disp.clear
 while True:
   draw.rectangle((0,0,width,height), outline=0, fill=0)
   disp.image(image)
@@ -85,6 +81,7 @@ while True:
     print(redo)
     print(y)
   redo = 0
+  draw.text((x,top+20), "epic", font=font, fill=225)
   disp.image(image)
   disp.display
   time.sleep(.5)
