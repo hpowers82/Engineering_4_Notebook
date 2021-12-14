@@ -52,6 +52,8 @@ while True:
     draw.rectangle((0,0,width,height), outline=0, fill=0)
     draw.text((x,top+20), "resetting."+"."*redo, font=font, fill=225)
     redo += 1
+   print("troll")
+   redo = 0
    disp.image(image)
    time.sleep(2)
    draw.rectangle((0,0,width,height), outline=0, fill=0)
