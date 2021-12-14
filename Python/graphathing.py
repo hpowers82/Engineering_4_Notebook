@@ -37,7 +37,7 @@ for i in range(128):
 
 font = ImageFont.load_default()
 draw = ImageDraw.Draw(image)
-draw.rectangle((10,30,10,50), outline=225, fill=225)
+draw.rectangle((50,1,1,1), outline=225,fill=225)
 disp.image(image)
 disp.display
 #draw.text((64,32), "epic", font=font, fill=225)
@@ -67,7 +67,6 @@ while True:
     redo += 1
    print("troll")
    redo = 0
-   disp.image(image)
    time.sleep(2)
    draw.rectangle((0,0,width,height), outline=0, fill=0)
 
@@ -75,7 +74,6 @@ while True:
     y=round(pixelList[redo]/max(pixelList)*64,0)
     draw.text((redo,y), "shmoove", font=font, fill=225)
     draw.text((x,top+20), "epic", font=font, fill=225)
-    disp.display
     draw.rectangle((redo,y,redo,y), outline=225,fill=225)
     redo += 1
     print(redo)
