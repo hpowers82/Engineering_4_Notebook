@@ -22,8 +22,6 @@ y=0
 pos_x = 0
 max_x = 1
 time = 0
-width = 128 ## first input in print is width
-height = 64  ##  second input in print is height
 disp.begin()
 pixelList = []
 for i in range(128):
@@ -35,6 +33,7 @@ def getY(pixelList,redo):
   y=round(pixelList[redo]/max(pixelList))
   return y
 while True:
+  draw.rectangle((0,0,width,height), outline=0, fill=0)
   time += 1
   accel, mag = lsm303.read()
   accel_x, accel_y, accel_z = accel
