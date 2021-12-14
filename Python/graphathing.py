@@ -67,7 +67,7 @@ while True:
     print(redo)
     print(y)
   redo = 0
-  time.sleep(.1)
+  time.sleep(.5)
   disp.display
 
       
