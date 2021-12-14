@@ -30,7 +30,7 @@ font = ImageFont.load_default()
 draw = ImageDraw.Draw(image)
 def getY(pixelList,redo):
  # y=round((int(pixelList[redo])/int(max(pixelList))*64)
-  y=round(pixelList[redo]/max(pixelList))
+  y=pixelList[redo]/max(pixelList)
   return y
 while True:
   draw.rectangle((0,0,width,height), outline=0, fill=0)
@@ -40,16 +40,16 @@ while True:
   mag_x, mag_y, mag_z = mag
   accel_x=abs(accel_x)
   print(accel_x)
-  redo = 0 
   pixelList.append(accel_x)
   pixelList.pop(0)
-  
+  print(pixelList)
+  getY(pixelList,redo)
   while redo < 128:
-    getY(pixelList,redo)
+    y=(pixelList[redo]/max(pixelList))*64
     draw.rectangle((redo,y,redo,y), outline=225,fill=225)
     redo += 1
-    print(redo)
-    print(y)
+    #print(redo)
+    #print(y)
   redo = 0
 
 
