@@ -32,7 +32,7 @@ disp.begin()
 font = ImageFont.load_default()
 draw = ImageDraw.Draw(image)
 #draw.text((64,32), "epic", font=font, fill=225)
-draw.rectangle((0,0,width,height), outline=255, fill=255)
+draw.rectangle((10,10,50,50), outline=255, fill=255)
 disp.display()
 time.sleep(2)
 while True:
