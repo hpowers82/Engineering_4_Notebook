@@ -39,15 +39,12 @@ for i in range(128):
 
 font = ImageFont.load_default()
 draw = ImageDraw.Draw(image)
-draw.rectangle((50,1,1,1), outline=225,fill=225)
-disp.image(image)
-disp.display
+
+
 #draw.text((64,32), "epic", font=font, fill=225)
 time.sleep(2)
 while True:
   draw.rectangle((0,0,width,height), outline=0, fill=0)
-  disp.image(image)
-  disp.display()
   accel, mag = lsm303.read()
   accel_x, accel_y, accel_z = accel
   mag_x, mag_y, mag_z = mag
@@ -83,7 +80,7 @@ while True:
   redo = 0
   draw.text((x,top+20), "epic", font=font, fill=225)
   disp.image(image)
-  disp.display
+  disp.display()
   time.sleep(.5)
       
   # time < 128:
