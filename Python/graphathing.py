@@ -43,10 +43,10 @@ while True:
   pixelList.append(accel_x)
   pixelList.pop(0)
   print(pixelList)
-  y=round(pixelList[127]/max(pixelList)*64,0)
-  print(y)
+  #y=round(pixelList[127]/max(pixelList)*64,0)
+  #print(y)
   while redo < 128:
-    y=(pixelList[redo]/max(pixelList))*64
+    y=round(pixelList[redo]/max(pixelList)*64,0)
     draw.rectangle((redo,y,redo,y), outline=225,fill=225)
     redo += 1
     #print(redo)
