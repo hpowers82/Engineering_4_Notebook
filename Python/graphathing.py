@@ -32,6 +32,7 @@ disp.begin()
 font = ImageFont.load_default()
 draw = ImageDraw.Draw(image)
 draw.rectangle((0,0,width,height), outline=0, fill=0)
+disp.image(image)
 time.sleep(5)
 while True:
   draw.rectangle((0,0,width,height), outline=0, fill=0)
