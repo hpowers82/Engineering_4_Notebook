@@ -17,7 +17,7 @@ padding = 2
 shape_width = 20
 top = padding
 bottom = height-padding
-
+redo = 0
 y=0
 pos_x = 0
 max_x = 1
