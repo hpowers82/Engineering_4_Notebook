@@ -43,7 +43,7 @@ while True:
   pixelList.append(accel_x)
   pixelList.pop(0)
   print(pixelList)
-  y=round(pixelList[redo]/max(pixelList))*64
+  y=round(pixelList[redo]/max(pixelList))*64,1)
   print(y)
   while redo < 128:
     y=(pixelList[redo]/max(pixelList))*64
