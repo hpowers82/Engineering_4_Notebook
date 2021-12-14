@@ -45,8 +45,11 @@ draw.rectangle((10,10,50,50), outline=255, fill=255)
 disp.image(image)
 disp.display()
 time.sleep(2)
+disp.clear
 while True:
   draw.rectangle((0,0,width,height), outline=0, fill=0)
+  disp.image(image)
+  disp.display()
   accel, mag = lsm303.read()
   accel_x, accel_y, accel_z = accel
   mag_x, mag_y, mag_z = mag
@@ -82,10 +85,9 @@ while True:
     print(redo)
     print(y)
   redo = 0
-  time.sleep(.5)
   disp.image(image)
   disp.display
-
+  time.sleep(.5)
       
   # time < 128:
    # redo = 128
