@@ -66,7 +66,7 @@ while True:
   oldMax=max(pixelList)
   disp.image(image)
   time.sleep(.1)
-
+  disp.display
 
       
   # time < 128:
@@ -85,4 +85,3 @@ while True:
    #     findY()
     #    draw.rectangle((redo,y,redo,y), outline=225,fill=225)
      #   redo += 1
-  oldMax=max(pixelList)
