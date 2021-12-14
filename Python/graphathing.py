@@ -35,11 +35,11 @@ pixelList = []
 for i in range(128):
  pixelList.append(0)
 
-
-
-
 font = ImageFont.load_default()
 draw = ImageDraw.Draw(image)
+draw.rectangle((10,30,10,30), outline=225, fill=225)
+disp.image(image)
+disp.display
 #draw.text((64,32), "epic", font=font, fill=225)
 time.sleep(2)
 while True:
