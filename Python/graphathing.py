@@ -49,6 +49,7 @@ while True:
     draw.rectangle((0,0,width,height), outline=0, fill=0)
     draw.text((x,top+20), "resetting."+"."*redo, font=font, fill=225)
     redo += 1
+   disp.image(image)
    time.sleep(2)
    draw.rectangle((0,0,width,height), outline=0, fill=0)
   redo = 0
@@ -62,7 +63,7 @@ while True:
   redo = 0
   oldMax=max(pixelList)
   disp.image(image)
-  time.sleep(.5)
+  time.sleep(.1)
 
 
       
