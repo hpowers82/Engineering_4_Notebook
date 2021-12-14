@@ -52,9 +52,7 @@ while True:
    disp.image(image)
    time.sleep(2)
    draw.rectangle((0,0,width,height), outline=0, fill=0)
-  redo = 0
-
-  while redo < 128:
+  elif redo < 128:
     y=round(pixelList[redo]/max(pixelList)*64,0)
     draw.rectangle((redo,y,redo,y), outline=225,fill=225)
     redo += 1
