@@ -79,7 +79,7 @@ while True:
   draw.text((x,top+20), "epic", font=font, fill=225)
   disp.image(image)
   disp.display()
-  time.sleep(.5)
+  #time.sleep(.5)
       
   # time < 128:
    # redo = 128
