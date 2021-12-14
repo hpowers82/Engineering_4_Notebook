@@ -49,7 +49,10 @@ while True:
     draw.rectangle((0,0,width,height), outline=0, fill=0)
     draw.text((x,top+20), "resetting."+"."*redo, font=font, fill=225)
     redo += 1
+   time.sleep(2)
+   draw.rectangle((0,0,width,height), outline=0, fill=0)
   redo = 0
+
   while redo < 128:
     y=round(pixelList[redo]/max(pixelList)*64,0)
     draw.rectangle((redo,y,redo,y), outline=225,fill=225)
@@ -57,7 +60,10 @@ while True:
     print(redo)
     print(y)
   redo = 0
-
+  oldMax=max(pixelList)
+  disp.image(image)
+  disp.display
+  time.sleep(.5)
 
 
       
