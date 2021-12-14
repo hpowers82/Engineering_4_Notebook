@@ -44,12 +44,12 @@ draw = ImageDraw.Draw(image)
 #draw.text((64,32), "epic", font=font, fill=225)
 time.sleep(2)
 while True:
-  draw.rectangle((0,0,width,height), outline=0, fill=0)
+  disp.clear()
   accel, mag = lsm303.read()
   accel_x, accel_y, accel_z = accel
   mag_x, mag_y, mag_z = mag
   accel_x=abs(accel_x)
-  #print(accel_x)
+  print("loop")
   pixelList.append(accel_x)
   pixelList.pop(0)
   oldMax=max(pixelList)
@@ -73,8 +73,8 @@ while True:
     y=round(pixelList[redo]/max(pixelList)*64,0)
     draw.rectangle((redo,y,redo,y), outline=225,fill=225)
     redo += 1
-    print(redo)
-    print(y)
+    #print(redo)
+    #print(y)
   redo = 0
   draw.text((x,top+20), "epic", font=font, fill=225)
   disp.image(image)
