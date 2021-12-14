@@ -31,6 +31,9 @@ disp.begin()
 
 font = ImageFont.load_default()
 draw = ImageDraw.Draw(image)
+draw.text((x,top+20), "epic", font=font, fill=225)
+disp.display
+time.sleep(2)
 while True:
   draw.rectangle((0,0,width,height), outline=0, fill=0)
   accel, mag = lsm303.read()
