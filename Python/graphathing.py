@@ -44,7 +44,7 @@ draw = ImageDraw.Draw(image)
 #draw.text((64,32), "epic", font=font, fill=225)
 time.sleep(2)
 while True:
-  disp.clear()
+  draw.rectangle((0,0,width,height), outline=0, fill=0)
   accel, mag = lsm303.read()
   accel_x, accel_y, accel_z = accel
   mag_x, mag_y, mag_z = mag
