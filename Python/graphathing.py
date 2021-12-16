@@ -67,7 +67,7 @@ while True:
 #   draw.rectangle((0,0,width,height), outline=0, fill=0)
 
   #while redo < 128:
-   for redo in range(0,127):
+  for redo in range(0,127):
     y=round(pixelList[redo]/max(pixelList)*64,0)
     draw.rectangle((redo,y,redo,y), outline=225,fill=225)
     #redo += 1
