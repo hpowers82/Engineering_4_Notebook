@@ -66,7 +66,6 @@ while True:
     redo += 1
    print("troll")
    redo = 0
-   time.sleep(2)
    draw.rectangle((0,0,width,height), outline=0, fill=0)
 
   while redo < 128:
