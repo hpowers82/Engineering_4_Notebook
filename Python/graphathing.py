@@ -47,35 +47,33 @@ while True:
   draw.rectangle((0,0,width,height), outline=0, fill=0)
   accel, mag = lsm303.read()
   accel_x, accel_y, accel_z = accel
-  mag_x, mag_y, mag_z = mag
+  #mag_x, mag_y, mag_z = mag
   accel_x=abs(accel_x)
   print("loop")
   pixelList.append(accel_x)
   pixelList.pop(0)
-  oldMax=max(pixelList)
-
   #print(pixelList)
   #y=round(pixelList[127]/max(pixelList)*64,0)
   #print(y)
   
-  if oldMax < max(pixelList):
-   print("that happened")
-   for x in range(3):
-    draw.rectangle((0,0,width,height), outline=0, fill=0)
-    draw.text((x,top+20), "resetting."+"."*redo, font=font, fill=225)
-    redo += 1
-   print("troll")
-   redo = 0
-   draw.rectangle((0,0,width,height), outline=0, fill=0)
+ # if oldMax < max(pixelList):
+  # print("that happened")
+  # for x in range(3):
+ #   draw.rectangle((0,0,width,height), outline=0, fill=0)
+ #   draw.text((x,top+20), "resetting."+"."*redo, font=font, fill=225)
+ #   redo += 1
+#   print("troll")
+#   redo = 0
+#   draw.rectangle((0,0,width,height), outline=0, fill=0)
 
-  while redo < 128:
+  #while redo < 128:
+   for redo in range(0,127):
     y=round(pixelList[redo]/max(pixelList)*64,0)
     draw.rectangle((redo,y,redo,y), outline=225,fill=225)
-    redo += 1
+    #redo += 1
     #print(redo)
     #print(y)
-  redo = 0
-  draw.text((x,top+20), "epic", font=font, fill=225)
+  #redo = 0
   disp.image(image)
   disp.display()
   #time.sleep(.5)
