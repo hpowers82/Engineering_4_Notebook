@@ -32,10 +32,9 @@ while True:
   accel, mag = lsm303.read()
   accel_x, accel_y, accel_z = accel
   mag_x, mag_y, mag_z = mag
- # draw.text((x,top+20), 'Accel X='+str(accel_x), font=font, fill=225)
-  draw.text((x,top+20), "y: " + (str(round(accel_y / 107, 3))), font=font, fill=225)
-  #draw.text((x,top+20), 'Accel Y='+str(accel_y), font=font, fill=225)
- # draw.text((x,top+40), 'Accel Z='+str(accel_z), font=font, fill=225)
-  #time.sleep(.5)
+  draw.text((x,top), "Accel X:"+ (str(round(accel_x / 107, 3))), font=font, fill=225)
+  draw.text((x,top+20), "Accel Y: " + (str(round(accel_y / 107, 3))), font=font, fill=225)
+  draw.text((x,top+40), 'Accel Z:'+(str(round(accel_z / 107, 3))), font=font, fill=225)
   disp.image(image)
+  disp.display()
 
