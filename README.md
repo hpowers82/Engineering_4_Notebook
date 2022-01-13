@@ -171,6 +171,4 @@ I had a few hiccups while completing this assignment. First, I put the file in t
 
 ## Wiring
 
-![Screenshot 2022-01-12 11 19 33 PM](https://user-images.githubusercontent.com/60944294/149371460-995d2385-acd4-4665-a442-a5f170e67d08.png)
-
 ## Reflection
