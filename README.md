@@ -171,4 +171,6 @@ I had a few hiccups while completing this assignment. First, I put the file in t
 
 ## Wiring
 
+![IMG_20220113_113930](https://user-images.githubusercontent.com/60944294/149371650-96a3d384-a44d-4dcb-b6b5-0adbf131e7f7.jpg)
+
 ## Reflection
