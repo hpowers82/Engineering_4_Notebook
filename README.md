@@ -161,4 +161,14 @@ The goal of the safe shutdown button is to use preexisting code in order to wire
 
 ## Reflection
 
-I had a few hiccups while completing this assignment. First, I put the file in the wrong folder in my pi. Then,
+I had a few hiccups while completing this assignment. First, I put the file in the wrong folder in my pi. Then, It would not work due to me not uncommenting the code you need to use when you are not using a reistor. This assignment taught me how to have code running at all times, and will be benifical when I am doing work without an interface and need to shut down the pi without a console.
+
+## GPIO Pins
+
+## Assignment Description
+
+## Evidence
+
+## Wiring
+
+## Reflection
