@@ -171,7 +171,7 @@ The point of this assignment is to display the data from the accelerometer onto 
 
 ### Evidence
 
-![image](https://user-images.githubusercontent.com/60944294/149375742-3949d613-576c-424f-aab4-34d6769308de.png)
+![image](https://github.com/hpowers82/Engineering_4_Notebook/blob/main/pictures/ezgif-2-e3f66f9ade.gif)
 
 ### Wiring
 
@@ -189,11 +189,11 @@ The point of this assignment is to run code that graphically displays the data f
 
 ### Evidence
 
-![image](https://user-images.githubusercontent.com/60944294/149378999-f24bead6-c6bc-431f-968c-bd4ded04a3a2.png)
+![image](https://github.com/hpowers82/Engineering_4_Notebook/blob/main/pictures/ezgif-2-8e17b67012.gif)
 
 ### Wiring
 
-![image](https://user-images.githubusercontent.com/60944294/149375742-3949d613-576c-424f-aab4-34d6769308de.png)
+![WIN_20220113_11_59_52_Pro (2)](https://user-images.githubusercontent.com/60944294/149380520-e5dc2ef1-67e7-41de-ae97-4cb2b2d10706.jpg)
 
 ### Reflection
 
