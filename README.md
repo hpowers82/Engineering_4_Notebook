@@ -1,4 +1,3 @@
-![149371650-96a3d384-a44d-4dcb-b6b5-0adbf131e7f7](https://user-images.githubusercontent.com/60944294/149372037-8112c1a9-daf9-4f82-8094-93d5474e6f56.jpg)
 # Engineering_4_Notebook
 
 ## Table of Contents
@@ -80,11 +79,11 @@ This assignment taught me the uses and syntax for functions. They are very usefu
 
 The goal of this assignement is to calculate the roots of a function by inputting the values of a, b, and c for y=ax^2+bx+c.
 
-## Evidence
+### Evidence
 
 ![Capture3](https://user-images.githubusercontent.com/60944294/135728704-25887227-789c-4b42-96a0-d0e0db76d2ae.PNG)
 
-## Wiring
+### Wiring
 
 N/A
 
@@ -98,11 +97,11 @@ This assignment tested my knowledge of quadratics, it was actaully a pretty good
 
 The goal of the strings and loops assignments was to teach me how to use for loops and edit strings and lists.
 
-## Evidence
+### Evidence
 
 ![Capture4](https://user-images.githubusercontent.com/60944294/136056379-0f0da36c-82a7-4f6f-be8e-59f62506f6e6.PNG)
 
-## Wiring
+### Wiring
 
 N/A
 
@@ -112,15 +111,15 @@ The strings and loops assignment was very usefull, especially concidering the MS
 
 ## MSP
 
-## Assignment Description
+### Assignment Description
 
 The goal of the MSP assignment was to create a full game of hangman within python. every time you made a mistake, a part should be added to the hangman. Every time you correctly guess a letter, it should add that letter to the correct spots in an array with letters you have not guessed yet as blanks.
 
-## Evidence
+### Evidence
 
 ![Screenshot 2021-09-30 10 14 58 PM](https://user-images.githubusercontent.com/60944294/136057854-354e55ec-f4b7-47d2-b957-d6c493c74448.png)
 
-## Wiring
+### Wiring
 
 N/A
 
@@ -130,15 +129,15 @@ The MSP assignment was incredibly difficult. I actually completely started over 
 
 ## CAD
 
-## Assignment Description
+### Assignment Description
 
 The goal of the CAD assignment is to create a skateboard while teaching me some elements of Onshape CAD design. This is done by checking whether the weight of the object is correct.
 
-## Evidence
+### Evidence
 
 ![image](https://user-images.githubusercontent.com/60944294/139372868-5448ca82-9bc9-4995-9bc1-83f0c2dfe453.png)
 
-## Wiring
+### Wiring
 
 N/A
 
@@ -148,30 +147,54 @@ This assignment was pretty difficult. a couple of times, i found that my weight 
 
 ## RPi Safe Shutdown Button
 
-## Assignment Description
+### Assignment Description
 
 The goal of the safe shutdown button is to use preexisting code in order to wire a button that shuts down your pi when it is pressed.
 
-## Evidence
+### Evidence
 
 ![IMG_20211129_120046](https://user-images.githubusercontent.com/60944294/143911229-4511ed28-258f-4877-92cd-b95255ad72af.jpg)
 
-## Wiring
+### Wiring
 
-![image](https://user-images.githubusercontent.com/60944294/143913184-83c30f35-f6a4-4583-b0d0-c9391aeb316e.png)
+![WIN_20220113_11_59_52_Pro (2)](https://user-images.githubusercontent.com/60944294/149380536-714a80be-2def-42e3-8995-4b81cb6f173c.jpg)
 
-## Reflection
+### Reflection
 
 I had a few hiccups while completing this assignment. First, I put the file in the wrong folder in my pi. Then, It would not work due to me not uncommenting the code you need to use when you are not using a reistor. This assignment taught me how to have code running at all times, and will be benifical when I am doing work without an interface and need to shut down the pi without a console.
 
 ## GPIO Pins
 
-## Assignment Description
+### Assignment Description
 
-## Evidence
+The point of this assignment is to display the data from the accelerometer onto the screen. 
 
-## Wiring
+### Evidence
 
-![149371650-96a3d384-a44d-4dcb-b6b5-0adbf131e7f7](https://user-images.githubusercontent.com/60944294/149372097-76974df0-3fc4-41c1-8843-c1ea43322e13.jpg)
+![image](https://user-images.githubusercontent.com/60944294/149375742-3949d613-576c-424f-aab4-34d6769308de.png)
 
-## Reflection
+### Wiring
+
+![WIN_20220113_11_59_52_Pro (2)](https://user-images.githubusercontent.com/60944294/149380520-e5dc2ef1-67e7-41de-ae97-4cb2b2d10706.jpg)
+
+### Reflection
+
+I had little to no trouble completing this assignment. This was very helpful for me to learn how to set up the screen, as well as use multiple devices at the same time. 
+
+## Headless Accelerometer
+
+### Assignment Description
+
+The point of this assignment is to run code that graphically displays the data from the accelerometer without a PC.
+
+### Evidence
+
+![image](https://user-images.githubusercontent.com/60944294/149378999-f24bead6-c6bc-431f-968c-bd4ded04a3a2.png)
+
+### Wiring
+
+![image](https://user-images.githubusercontent.com/60944294/149375742-3949d613-576c-424f-aab4-34d6769308de.png)
+
+### Reflection
+
+This assignment
