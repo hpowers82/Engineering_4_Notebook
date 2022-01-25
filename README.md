@@ -198,3 +198,21 @@ The point of this assignment is to run code that graphically displays the data f
 ### Reflection
 
 This assignment
+
+## Pi Camera
+
+### Assignment Description
+
+The goal of this assignment is to create two programs: one that takes one picture when run, and one that takes 5 using different camera effects.
+
+### Evidence
+
+![image_15](https://user-images.githubusercontent.com/60944294/151026715-1d4c93b1-0ec5-44b1-81b8-ee7f729f4b47.jpg)
+
+### Wiring
+
+n/a
+
+### Reflection
+
+This assignment was pretty easy. I had little trouble with the first section, as the code to take a picture is rather simple, but i purposefull made it more complicated for myself by making it so each file names itself in relation to the number of pre-existing images, so if there are 15 images already, the new image would be named image_16. For the second part, I made it so the images would be taken with 5 random non-repeating effects, which made it slightly more difficult.
