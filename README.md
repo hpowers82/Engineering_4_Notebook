@@ -227,6 +227,10 @@ The goal of this assignment is to create a stop-motion animation with the pi cam
 
 ![ezgif-2-19019bc9ed](https://user-images.githubusercontent.com/60944294/151417049-b93586c8-fbd4-4bab-875a-d1fe956f366f.gif)
 
+### Wiring
+
+![WIN_20220113_11_59_52_Pro (2)](https://user-images.githubusercontent.com/60944294/149380536-714a80be-2def-42e3-8995-4b81cb6f173c.jpg)
+
 ### Reflection
 
 This assignment was easy to complete. it introduced me to a way to create a video out of images, as well as some more details on how the pi camera works. the button commands used here may also prove useful in the future.
