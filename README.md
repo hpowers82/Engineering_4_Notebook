@@ -216,3 +216,17 @@ n/a
 ### Reflection
 
 This assignment was pretty easy. I had little trouble with the first section, as the code to take a picture is rather simple, but i purposefull made it more complicated for myself by making it so each file names itself in relation to the number of pre-existing images, so if there are 15 images already, the new image would be named image_16. For the second part, I made it so the images would be taken with 5 random non-repeating effects, which made it slightly more difficult.
+
+## Copypasta
+
+### Assignment Description
+
+The goal of this assignment is to create a stop-motion animation with the pi camera.
+
+### Evidence
+
+![ezgif-2-19019bc9ed](https://user-images.githubusercontent.com/60944294/151417049-b93586c8-fbd4-4bab-875a-d1fe956f366f.gif)
+
+### Reflection
+
+This assignment was easy to complete. it introduced me to a way to create a video out of images, as well as some more details on how the pi camera works. the button commands used here may also prove useful in the future.
