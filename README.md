@@ -179,7 +179,28 @@ The point of this assignment is to display the data from the accelerometer onto 
 
 ### Reflection
 
-I had little to no trouble completing this assignment. This was very helpful for me to learn how to set up the screen, as well as use multiple devices at the same time. 
+This assignment gave me some trouble due to the difficulties I had with the LCD screen. From what I have learned, I believe that the proper order is:
+
+```python
+import Adafruit_SSD1306
+RST = 24
+disp = Adafruit_SSD1306.SSD1306_128_64(rst=RST, i2c_address=0x3d)
+
+width = disp.width
+height = disp.height
+image = Image.new('1', (width, height))
+
+disp.begin()
+
+draw = ImageDraw.Draw(image)
+
+draw.rectangle((0,0,width,height), outline=0, fill=0) #clears the screen
+
+#draw whatever you want to here
+
+disp.image(image)
+disp.display()
+```
 
 ## Headless Accelerometer
 
